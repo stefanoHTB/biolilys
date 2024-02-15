@@ -1,0 +1,19 @@
+ [
+      {
+        "name": "image1",
+        "path": "/public/img/ner.png",
+        "description": "logo navbar"
+      },
+      {
+        "name": "image2",
+        "path": "/path/to/image2.jpg",
+        "description": "about page image"
+      },
+      {
+        "name": "image2",
+        "path": "/path/to/image2.jpg",
+        "description": "link page image"
+      }
+
+    ]
+  

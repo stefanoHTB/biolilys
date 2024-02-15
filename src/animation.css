@@ -1,0 +1,16 @@
+.animate-slide-in {
+    animation: slideIn 10s ease-in-out 10s infinite alternate;
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    100% {
+      opacity: 0;
+    }
+  }
