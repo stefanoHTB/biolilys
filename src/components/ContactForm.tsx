@@ -58,7 +58,7 @@ const ContactForm = () => {
           and we're here to make your experience exceptional.
         </p>
         <div className="flex justify-center">
-          <img className="h-80" alt="img" src={"/img/ner.png"} />
+          <img className="h-80" alt="img" src={"/img/website/r8gg-plan.png"} />
         </div>
       </div>
 

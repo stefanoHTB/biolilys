@@ -13,33 +13,33 @@ const ServicesPage = () => {
 
   const services = [
     {
-      imageSrc: "/img/devops.jpeg",
-      title: "Service 1",
+      imageSrc: "/img/services/webdev.jpeg",
+      title: "Web Development Services",
       description: "Description of Service 1",
     },
     {
-      imageSrc: "/img/devops.jpeg",
-      title: "Service 2",
+      imageSrc: "/img/services/mobiledev.png",
+      title: "Mobile Development Services",
       description: "Description of Service 2",
     },
     {
-      imageSrc: "/img/devops.jpeg",
-      title: "Service 3",
+      imageSrc: "/img/services/api.jpeg",
+      title: "Api Development and Integration",
       description: "Description of Service 3",
     },
     {
-      imageSrc: "/img/devops.jpeg",
-      title: "Service 1",
+      imageSrc: "/img/services/shots.jpeg",
+      title: "Shopify Web Development",
       description: "Description of Service 1",
     },
     {
-      imageSrc: "/img/devops.jpeg",
-      title: "Service 2",
-      description: "Description of Service 2",
+      imageSrc: "/img/services/shopify.jpeg",
+      title: "Hire a Shopify Consultant",
+      description: "Hire a Shopify Consultant",
     },
     {
-      imageSrc: "/img/devops.jpeg",
-      title: "Service 3",
+      imageSrc: "/img/services/appshopify.jpeg",
+      title: "Deploy your own Custom Shopify Application",
       description: "Description of Service 3",
     },
     // Add more services as needed
