@@ -7,6 +7,8 @@ const Navbar = () => {
   const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
   const mobileMenuRef = useRef<HTMLDivElement>(null);
 
+  const [isTransparent, setTransparent] = useState(true); // State to track navbar transparency
+
   const [isDivClicked, setDivClicked] = useState(false);
 
   const handleDivClick = () => {
@@ -20,6 +22,22 @@ const Navbar = () => {
   const closeMobileMenu = () => {
     setMobileMenuOpen(false);
   };
+
+  useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      // Set transparent state based on scroll position
+      setTransparent(scrollTop === 0);
+    };
+
+    // Add scroll event listener
+    window.addEventListener("scroll", handleScroll);
+
+    // Clean up function
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
 
   useEffect(() => {
     const handleOutsideClick = (event: MouseEvent) => {
@@ -40,7 +58,11 @@ const Navbar = () => {
   }, [isMobileMenuOpen]);
 
   return (
-    <nav className="bg-white dark:bg-stone-950 p-3 fixed w-full top-0 shadow-md border-b dark:border-stone-900 z-20">
+    <nav
+      className={`fixed w-full top-0 z-20 ${
+        isTransparent ? "bg-transparent" : "bg-white dark:bg-stone-950"
+      } p-3 shadow-md  transition-all duration-300`}
+    >
       <div className="container mx-auto flex justify-between items-center">
         <div className="flex items-center w-full justify-center md:w-auto">
           <img
@@ -58,27 +80,27 @@ const Navbar = () => {
 
         <div className="hidden md:flex space-x-4 ">
           <Link to={"/"}>
-            <h5 className="text-black dark:text-white font-bold hover:text-blue-300 dark:hover:text-blue-300">
+            <h5 className="text-black dark:text-gray-100  hover:text-blue-300 dark:hover:text-blue-300">
               Home
             </h5>
           </Link>
           <Link to={"/about"}>
-            <h5 className="ext-black dark:text-white font-bold hover:text-blue-300 dark:hover:text-blue-300">
+            <h5 className="ext-black dark:text-gray-100   hover:text-blue-300 dark:hover:text-blue-300">
               About
             </h5>{" "}
           </Link>
           <Link to={"/services"}>
-            <h5 className="ext-black dark:text-white font-bold hover:text-blue-300 dark:hover:text-blue-300">
+            <h5 className="ext-black dark:text-gray-100  hover:text-blue-300 dark:hover:text-blue-300">
               Services
             </h5>{" "}
           </Link>
           <Link to={"/blog"}>
-            <h5 className="ext-black dark:text-white font-bold hover:text-blue-300 dark:hover:text-blue-300">
+            <h5 className="ext-black dark:text-gray-100  hover:text-blue-300 dark:hover:text-blue-300">
               Blog
             </h5>{" "}
           </Link>
           <Link to={"/research"}>
-            <h5 className="ext-black dark:text-white font-bold hover:text-blue-300 dark:hover:text-blue-300">
+            <h5 className="ext-black dark:text-gray-100  hover:text-blue-300 dark:hover:text-blue-300">
               Research
             </h5>{" "}
           </Link>
