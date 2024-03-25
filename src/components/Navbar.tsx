@@ -155,8 +155,8 @@ const Navbar = () => {
               >
                 Research
               </Link>
-              <br />
-              <div className="flex justify-center items-center">
+              <div className="flex justify-between items-center text-black dark:text-white border-b border-gray-300 dark:border-gray-700">
+                <h4 className="pl-4">Color Mode</h4>
                 <UISwitch />
               </div>
             </div>
