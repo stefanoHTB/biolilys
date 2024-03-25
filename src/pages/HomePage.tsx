@@ -1,9 +1,7 @@
-import blogs from "../blogs.json"; // Import the fake data
 import Banner from "../components/Banner";
 import Message from "../components/Message";
 import { useEffect } from "react";
 import ReactGA from "react-ga";
-import BlogCarousel from "../components/BlogCarousel";
 import ContactForm from "../components/ContactForm";
 import VideoBanner from "../components/VideoBanner";
 

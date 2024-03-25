@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import ServicesGrid from "../components/ServicesGrid";
 import ReactGA from "react-ga";
-import Banner from "../components/Banner";
 import ServicesBanner from "../components/ServicesBanner";
 import ContactForm from "../components/ContactForm";
 
