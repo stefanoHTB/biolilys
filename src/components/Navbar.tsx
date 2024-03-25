@@ -148,6 +148,17 @@ const Navbar = () => {
               >
                 Blog
               </Link>
+              <Link
+                to={"/research"}
+                onClick={closeMobileMenu}
+                className="py-2 px-4 text-black dark:text-white hover:bg-gray-100 dark:hover:bg-stone-900  border-b border-gray-300 dark:border-gray-700 "
+              >
+                Research
+              </Link>
+              <br />
+              <div className="flex justify-center items-center">
+                <UISwitch />
+              </div>
             </div>
           )}
         </div>
