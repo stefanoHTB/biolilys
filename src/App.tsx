@@ -12,6 +12,7 @@ import PrivacyPolicy from "./pages/PrivacyPolicy";
 import BlogsListPage from "./pages/BlogsListPage";
 import TermsOfService from "./pages/TermsofService";
 import ServicesPage from "./pages/ServicesPage";
+import ResearchPage from "./pages/ResearchPage";
 
 const TRACKING_ID = "G-RERJSP9M7P";
 ReactGA.initialize(TRACKING_ID);
@@ -27,6 +28,7 @@ function App() {
         <Route path="about" element={<AboutPage />} />
         <Route path="redux" element={<LoginPage />} />
         <Route path="blog/:id" element={<BlogPage />} />
+        <Route path="research" element={<ResearchPage />} />
 
         <Route path="privacy" element={<PrivacyPolicy />} />
         <Route path="terms" element={<TermsOfService />} />

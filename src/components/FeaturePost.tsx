@@ -8,7 +8,7 @@ type FeaturedPostProps = {
 
 const FeaturedPost = ({ post }: FeaturedPostProps) => {
   return (
-    <div className="col-span-2 md:col-span-1 max-w-4xl mx-auto bg-white shadow-md overflow-hidden rounded-md mb-8">
+    <div className="mt-10">
       {/* Display the image */}
       <img
         src={post.imageSrc}

@@ -9,19 +9,14 @@ const AboutPage = () => {
   });
   return (
     <>
+      <FeaturedPost
+        post={{
+          title: "",
+          description: "",
+          imageSrc: "/videos/12.jpg",
+        }}
+      />
       <div className="container mx-auto p-8 bg-white dark:bg-stone-950 shadow-md ">
-        {/* <h1 className="text-3xl font-bold mb-6 text-black dark:text-white">
-          About Us
-        </h1> */}
-
-        <FeaturedPost
-          post={{
-            title: "",
-            description: "",
-            imageSrc: "/img/002/002.png",
-          }}
-        />
-
         <h3 className="text-2xl sm:text-2xl lg:text-2xl font-bold mb-4 text-black dark:text-white">
           Empowering Your Journey in Shopify App Development
         </h3>
