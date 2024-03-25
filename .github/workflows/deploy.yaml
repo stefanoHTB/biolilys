@@ -30,4 +30,4 @@ jobs:
         run: npm run build
 
       - name: Copy dist folder
-        run: cp -r dist /var/www/biolilys
+        run: sudo cp -r dist /var/www/biolilys
