@@ -29,5 +29,8 @@ jobs:
       - name: Build
         run: npm run build
 
+      - name: Permissions
+        run: chmod +rwx /opt/biolilys
+
       - name: Copy dist folder
         run: sudo cp -r dist /opt/biolilys
