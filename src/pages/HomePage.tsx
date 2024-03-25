@@ -18,7 +18,7 @@ const HomePage = () => {
         <Banner
           title={"Crafting Excellence: Your Gateway to Shopify App Mastery"}
           description={
-            "Embark on a journey of Shopify app development mastery. Our concise and practical guides to empowers you to create robust and scalable apps tailored to your business needs. "
+            "Join on a journey of Shopify app development mastery. Our concise and practical guides to empowers you to create robust and scalable apps tailored to your business needs. "
           }
           button1Text={"Learn More"}
           button2Text={"Services"}
