@@ -30,6 +30,4 @@ jobs:
         run: npm run build
 
       - name: Copy dist folder
-        env:
-          SUDO_PASSWORD: ${{ secrets.SUDO_PASSWORD }}
-        run: echo '${SUDO_PASSWORD}' | sudo -S cp -r dist /var/www/biolilys
+        run: echo '${{ secrets.SUDO_PASSWORD }}' | sudo -S cp -r dist /var/www/biolilys
