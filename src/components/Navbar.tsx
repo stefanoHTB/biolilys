@@ -15,9 +15,9 @@ const Navbar = () => {
     setDivClicked(!isDivClicked);
   };
 
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!isMobileMenuOpen);
-  };
+  // const toggleMobileMenu = () => {
+  //   setMobileMenuOpen(!isMobileMenuOpen);
+  // };
 
   const closeMobileMenu = () => {
     setMobileMenuOpen(false);
@@ -79,7 +79,7 @@ const Navbar = () => {
         </div>
 
         <div className="hidden md:flex space-x-4 ">
-          <Link to={"/"}>
+          {/* <Link to={"/"}>
             <h5 className="text-black dark:text-gray-100  hover:text-blue-300 dark:hover:text-blue-300">
               Home
             </h5>
@@ -103,7 +103,7 @@ const Navbar = () => {
             <h5 className="ext-black dark:text-gray-100  hover:text-blue-300 dark:hover:text-blue-300">
               Research
             </h5>{" "}
-          </Link>
+          </Link> */}
         </div>
         <div className="hidden md:flex  items-center">
           {/* GitHub button with a div inside */}
@@ -119,7 +119,7 @@ const Navbar = () => {
         </div>
 
         <div className="md:hidden">
-          <button
+          {/* <button
             className="text-black dark:text-white dark:hover:text-blue-300 hover:text-blue-300"
             onClick={toggleMobileMenu}
           >
@@ -134,7 +134,8 @@ const Navbar = () => {
             >
               <path d="M4 6h16M4 12h16m-7 6h7"></path>
             </svg>
-          </button>
+          </button> */}
+          <UISwitch />
 
           {/* Mobile menu */}
           {isMobileMenuOpen && (
